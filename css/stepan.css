@@ -1,0 +1,31 @@
+.shape {
+  width: 300px;
+  height: 300px;
+}
+
+.box-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 300px 150px;
+  border-color: transparent transparent #007bff transparent;
+}
+
+.box-circle {
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 122px;
+  left: 76px;
+  height: 150px;
+  width: 150px;
+}
+
+.box-square {
+  background-color: brown;
+  position: absolute;
+}
+
+.box-wrapper {
+  position: relative;
+}
