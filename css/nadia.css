@@ -2,6 +2,7 @@
   width: 300px;
   height: 300px;
   display: inline-block;
+  box-sizing: border-box
 }
 
 .main {
@@ -14,7 +15,6 @@
   border-style: solid;
   border-width: 0 150px 300px 150px;
   border-color: transparent transparent #00f7ff transparent;
-  box-sizing: border-box;
 }
 
 .block-2 {
@@ -22,16 +22,13 @@
   border-radius: 300px;
   background-color: yellow;
   position: absolute;
-  left: 75px;
-  top: 100px;
-  opacity: 0.5;
-  width: 150px;
-  height: 150px;
-  box-sizing: border-box;
+  left: 60px;
+  top: 118px;
+  width: 180px;
+  height: 180px;
 }
 
 .block-3 {
   border: 1px solid black;
   background-color: hotpink;
-  box-sizing: border-box;
 }
