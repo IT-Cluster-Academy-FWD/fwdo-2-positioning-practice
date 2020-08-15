@@ -28,7 +28,7 @@
   top: 118px;
   width: 180px;
   height: 180px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .block-3 {
@@ -38,6 +38,15 @@
   position: absolute;
   left: 0;
   z-index: 1;
+}
+
+.block-4 {
+  width: 0;
+  border-style: solid;
+  border-width: 300px 150px 0 150px;
+  border-color: #88ff00 transparent transparent transparent;
+  position: absolute;
+  z-index: 3;
 }
 
 .block-1:hover {
