@@ -1,6 +1,7 @@
 .block-main {
   width: 300px;
   height: 300px;
+  display: inline-block;
   box-sizing: border-box;
 }
 
@@ -68,7 +69,7 @@
   height: 600px;
 }
 
-.block-4:hover {
+.block-4:hover ~ .block-main {
   display: none;
 }
 
