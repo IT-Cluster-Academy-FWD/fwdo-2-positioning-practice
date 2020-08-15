@@ -1,7 +1,7 @@
 .block-main {
   width: 300px;
   height: 300px;
-  display: inline-block;
+  box-sizing: border-box;
 }
 
 .main {
@@ -14,7 +14,8 @@
   border-style: solid;
   border-width: 0 150px 300px 150px;
   border-color: transparent transparent #00f7ff transparent;
-  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
 }
 
 .block-2 {
@@ -22,16 +23,52 @@
   border-radius: 300px;
   background-color: yellow;
   position: absolute;
-  left: 75px;
-  top: 100px;
-  opacity: 0.5;
-  width: 150px;
-  height: 150px;
-  box-sizing: border-box;
+  left: 60px;
+  top: 118px;
+  width: 180px;
+  height: 180px;
+  z-index: 4;
 }
 
 .block-3 {
   border: 1px solid black;
   background-color: hotpink;
-  box-sizing: border-box;
+  width: 320px;     /*Поклала ширину третьому блоку 320, щоб можна було до нього добратися*/  
+  position: absolute;
+  left: 0;
+  z-index: 1;
 }
+
+.block-4 {
+  width: 0;
+  border-style: solid;
+  border-width: 300px 150px 0 150px;
+  border-color: #88ff00 transparent transparent transparent;
+  position: absolute;
+  z-index: 3;
+}
+
+.block-1:hover {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 300px 600px 300px;
+  border-color: transparent transparent #0900ff transparent;
+}
+
+.block-2:hover {
+  background-color: #ff2600;
+  width: 360px;
+  height: 360px;
+}
+
+.block-3:hover {
+  background-color: #ff0088;
+  width: 600px;
+  height: 600px;
+}
+
+.block-4:hover {
+  display: none;
+}
+
