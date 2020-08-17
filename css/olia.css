@@ -1,0 +1,72 @@
+.boxes {
+    position: relative;
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.box-triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 300px 150px;
+  border-color: transparent transparent #007bff transparent;
+  position: absolute;
+  z-index: 2;
+}
+
+.box-circle {
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 121px;
+  left: 57px;
+  height: 185px;
+  width: 185px;
+  z-index: 4;
+}
+
+.box-square {
+  width: 302px;
+  height: 302px;
+  background-color: yellowgreen;
+  position: absolute;
+  z-index: 1;
+ }
+
+.opposite-triangle{
+  width: 0;
+  border-style: solid;
+  border-width: 300px 150px 0 150px;
+  border-color: grey transparent transparent transparent;
+  position: fixed;
+  z-index: 3;
+}
+
+.box-triangle:hover{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 300px 600px 300px;
+  border-color: transparent transparent red transparent;
+}
+
+.box-circle:hover {
+  background-color: yellow;
+  height: 370px;
+  width: 370px;
+}
+
+.box-square:hover {
+  width: 600px;
+  height: 600px;
+  background-color: darkgreen;
+ 
+}
+
+.opposite-triangle:hover + *, .opposite-triangle:hover + * + *, .opposite-triangle:hover + * + * + * {
+  display:none;
+}
