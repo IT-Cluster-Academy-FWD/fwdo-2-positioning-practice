@@ -68,5 +68,5 @@
 }
 
 .opposite-triangle:hover + *, .opposite-triangle:hover + * + *, .opposite-triangle:hover + * + * + * {
-  display:none;
+  display: none;
 }
