@@ -1,17 +1,17 @@
 .main-rel {
   position: relative;
-  display: inline;
 }
+
 .figure {
   height: 300px;
   width: 300px;
-  display: inline-block;
   position: absolute;
 }
 
 .figure:hover {
   transform: scale(2);
 }
+
 .box-1 {
   width: 0;
   height: 0;
@@ -19,7 +19,6 @@
   border-width: 0 150px 300px 150px;
   border-color: transparent transparent #007bff transparent;
   z-index: 3;
-  color: blueviolet;
 }
 
 .box-2 {
@@ -37,11 +36,10 @@
   z-index: 0;
   padding: 10px;
 }
+
 .box-3:hover {
   background-color: rgb(210, 243, 24);
 }
-
-
 
 .box-1:hover {
   border-bottom-color: red;
@@ -69,5 +67,4 @@
   .box-1, .box-4 {
     left: 10px;
     top: 10px;
-
   }
