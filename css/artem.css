@@ -1,0 +1,70 @@
+.main-rel {
+  position: relative;
+}
+
+.figure {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+}
+
+.figure:hover {
+  transform: scale(2);
+}
+
+.box-1 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 300px 150px;
+  border-color: transparent transparent #007bff transparent;
+  z-index: 3;
+}
+
+.box-2 {
+  border-radius: 50%;
+  background-color: blueviolet;
+  left: 69px;
+  top: 125px;
+  height: 185px;
+  width: 185px;
+  z-index: 4;
+}
+
+.box-3 {
+  background-color: rgb(41, 184, 12);
+  z-index: 0;
+  padding: 10px;
+}
+
+.box-3:hover {
+  background-color: rgb(210, 243, 24);
+}
+
+.box-1:hover {
+  border-bottom-color: red;
+}
+
+.box-2:hover {
+  background-color: aqua  ;
+}
+
+.box-4 {
+  width: 0;
+  height: 0;  
+  border-style: solid;
+  border-width: 300px 150px 0px 150px;
+  border-color:  #ee0e0e transparent transparent transparent;
+  position: absolute;
+  z-index: 4;
+  color: blueviolet;
+  }  
+
+  .box-4:hover ~ div  {
+    opacity: 0;
+  }
+
+  .box-1, .box-4 {
+    left: 10px;
+    top: 10px;
+  }
